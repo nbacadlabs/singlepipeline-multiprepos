@@ -29,7 +29,7 @@ pipeline{
             }
         stage("Call helloWorld"){
             steps{
-                  helloWorldSimple("Akem", "Sunday")
+                  helloWorld("Akem", "Sunday")
                 }
             }
         }
