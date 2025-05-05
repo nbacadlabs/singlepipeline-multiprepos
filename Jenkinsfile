@@ -14,9 +14,9 @@ pipeline{
         stage("create subdirectory"){
             steps{
                 script{
-                        myCheckoutFunction("master", "multibranch", "https://github.com/nbacadlabs/multibranch.git")
-                        myCheckoutFunction("master", "csharptutorials", "https://github.com/nbacadlabs/c-sharp-tutorials.git")
-                        myCheckoutFunction("master", "terraformintegration", "https://github.com/nbacadlabs/terraform-integration.git")
+                        myCheckoutFunction("main", "multibranch", "https://github.com/nbacadlabs/multibranch.git")
+                        myCheckoutFunction("main", "csharptutorials", "https://github.com/nbacadlabs/c-sharp-tutorials.git")
+                        myCheckoutFunction("main", "terraformintegration", "https://github.com/nbacadlabs/terraform-integration.git")
                 }
                 }
             }
