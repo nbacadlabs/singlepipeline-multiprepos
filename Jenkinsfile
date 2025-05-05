@@ -16,7 +16,7 @@ pipeline{
                 script{
                         myCheckoutFunction("main", "multibranch", "https://github.com/nbacadlabs/multibranch.git")
                         myCheckoutFunction("main", "csharptutorials", "https://github.com/nbacadlabs/c-sharp-tutorials.git")
-                        myCheckoutFunction("main", "terraformintegration", "https://github.com/nbacadlabs/terraform-integration.git")
+                        // myCheckoutFunction("main", "terraformintegration", "https://github.com/nbacadlabs/terraform-integration.git")
                 }
      
                 }
