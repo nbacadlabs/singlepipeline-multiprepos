@@ -23,7 +23,7 @@ pipeline{
             }
         stage("List current directory"){
             steps{
-                  sh 'ls pwd'
+                  sh 'echo ls pwd'
                 }
             }
         }
