@@ -1,3 +1,4 @@
+@Library("nbshared-library") _
 def myCheckoutFunction(branch, subdirectory, URL){
         checkout([$class: 'GitSCM',
                          branches: [[name: branch]],
@@ -24,6 +25,11 @@ pipeline{
         stage("List current directory"){
             steps{
                   sh 'ls $PWD'
+                }
+            }
+        stage("Call helloWorld"){
+            steps{
+                  helloWorld()
                 }
             }
         }
