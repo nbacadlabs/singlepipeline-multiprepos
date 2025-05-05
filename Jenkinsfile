@@ -18,6 +18,12 @@ pipeline{
                         myCheckoutFunction("main", "csharptutorials", "https://github.com/nbacadlabs/c-sharp-tutorials.git")
                         myCheckoutFunction("main", "terraformintegration", "https://github.com/nbacadlabs/terraform-integration.git")
                 }
+     
+                }
+            }
+        stage("List current directory"){
+            steps{
+                  sh 'ls pwd'
                 }
             }
         }
